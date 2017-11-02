@@ -37,3 +37,8 @@ RUN         apt-get -y install nginx
 
 # supervisor install
 RUN         apt-get -y install supervisor
+
+ENV         LANG C.UTF-8
+
+COPY        requirements.txt /srv/requirements.txt
+RUN         /root/.pyenv/versions/app/bin/pip install -r /srv/requirements.txt
