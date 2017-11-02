@@ -1,4 +1,4 @@
-FROM            base
+FROM            klee2017/base
 MAINTAINER      kaythechemist@gmail.com
 
 # 실수 방지 : base를 오랫동안 업데이트하지 않았을 때 대비.
